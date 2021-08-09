@@ -67,7 +67,7 @@ public class SimCardController {
 		}
 	}
 	
-	@PatchMapping("/deActivate/{id}")
+	@PatchMapping("/deactivate/{id}")
 	public ResponseEntity<Object> deActivate(@PathVariable int id) {
 		try {
 			if (simCardDao.existsById(id)) {
